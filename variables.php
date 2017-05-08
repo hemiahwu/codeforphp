@@ -2,69 +2,53 @@
 	// 单行注释
 	#  单行注释
 	/*
-	   多行
-	   注释
+		多行
+		注释
 	*/
-
-	# 变量
+	
+	# 变量 variables
 	/*
-		- 使用$修饰变量
-		- 由字符或下划线开头
-		- 由字符/数字/下划线组成
-		- 大小写敏感
+		- 前缀"$"
+		- 以字母或者下划线_开头
+		- 由数字 / 字母 / 下划线组成
 		- 驼峰命名法
+		- 大小写敏感
 	*/
+	# $_output = "Hello World";
+
 
 	# 数据类型
-	/*
-		- String
-		- Integer
-		- Float
-		- Boolean
-		===============
-		- Array 
-		- Object
-		- Null
-		- Resource
+	/* 	
+		String Boolean Integer Float
+		NULL Object Array Resource
 	*/
-	$_output = 'Hello World!';
-	$number = 4;
-	$float = 4.4;
-	$bool = true;
+	$_output = "Hello World";
+	$bool = true; 
+	$number = 5;
+	$float = 5.5;
 
-	# 数值相加
+	# 数据相加
 	$num1 = 7;
 	$num2 = 12;
 	$sum = $num1 + $num2;
 
 	# 字符串拼接
-	$str1 = 'Hello';
-	$str2 = 'World';
-	# $greeting = $str1 + $str2;
-	# $greeting = $str1 .' '. $str2;
-	# 双引和单引的区别
-	$greeting = '$str1 $str2';
+	$string1 = "Hello";
+	$string2 = "World";
+	$greeting = $string1.' '.$string2;
 
+	# 单引号和双引号
+	$greeting2 = '$string1 $string2';
+	$greeting3 = "$string1 $string2";
 
-	# 转移字符
-	# $str3 = 'They\'re here';
-	$str3 = "They're here";
+	# 转义字符
+	$greeting4 = 'Thye\'re Here';
+	$greeting5 = "Thye're Here";
 
 	# 常量
-	define('GREETING','Hello WoRlD!',true);
+	define("GREETING", "Hello Everyone!",true);
 
-	echo greeting;
+	echo greEting;
+	# print "Hello Everyone";
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
 
